@@ -2,9 +2,9 @@
   "name": "linkedlist",
   "version": "1.0.0",
   "description": "",
-  "main": "linkedList.js",
+  "main": "src/linkedList.js",
   "scripts": {
-    "start": "node linkedList.js",
+    "start": "node src/linkedList.js",
     "test": "jest "
   },
   "keywords": [],

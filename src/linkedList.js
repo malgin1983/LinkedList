@@ -76,7 +76,12 @@ const LinkedList =() => ({
             currentNode = currentNode.next
         }
         return arr?.length;
+    },
+    clear(){
+        this.head = null;
+        this.tail = null;
     }
+    
 })
 
 module.exports = {

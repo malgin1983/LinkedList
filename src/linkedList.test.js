@@ -94,3 +94,25 @@ describe('Test length', () => {
         expect(list4.getLength()).toEqual(3);
     });
 });
+
+describe('Test clear list', () => {
+    
+    const List234 = LinkedList().addFirst('a').addLast('b').addLast('c')
+    
+    test('Length before clear', () => {
+        expect( List234.getLength()).toEqual(3);
+    });
+    
+    test('Length after clear', () => {
+        List234.clear()
+        expect( List234.getLength()).toEqual(0);
+    });
+    
+    test('First element after clear', () => {
+        expect(List234.getFirst()).toEqual(null);
+    });
+    
+    test('Last element after clear', () => {
+        expect(List234.getLast()).toEqual(null);
+    });
+});
